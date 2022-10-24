@@ -1,0 +1,113 @@
+package com.liferay.samples.fbo.alpha.client.dto.v2_0;
+
+import com.liferay.samples.fbo.alpha.client.function.UnsafeSupplier;
+import com.liferay.samples.fbo.alpha.client.serdes.v2_0.FooSerDes;
+
+import java.io.Serializable;
+
+import java.util.Objects;
+
+import javax.annotation.Generated;
+
+/**
+ * @author Fabian-Liferay
+ * @generated
+ */
+@Generated("")
+public class Foo implements Cloneable, Serializable {
+
+	public static Foo toDTO(String json) {
+		return FooSerDes.toDTO(json);
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public void setDescription(
+		UnsafeSupplier<String, Exception> descriptionUnsafeSupplier) {
+
+		try {
+			description = descriptionUnsafeSupplier.get();
+		}
+		catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+	}
+
+	protected String description;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public void setId(UnsafeSupplier<Long, Exception> idUnsafeSupplier) {
+		try {
+			id = idUnsafeSupplier.get();
+		}
+		catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+	}
+
+	protected Long id;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setName(UnsafeSupplier<String, Exception> nameUnsafeSupplier) {
+		try {
+			name = nameUnsafeSupplier.get();
+		}
+		catch (Exception e) {
+			throw new RuntimeException(e);
+		}
+	}
+
+	protected String name;
+
+	@Override
+	public Foo clone() throws CloneNotSupportedException {
+		return (Foo)super.clone();
+	}
+
+	@Override
+	public boolean equals(Object object) {
+		if (this == object) {
+			return true;
+		}
+
+		if (!(object instanceof Foo)) {
+			return false;
+		}
+
+		Foo foo = (Foo)object;
+
+		return Objects.equals(toString(), foo.toString());
+	}
+
+	@Override
+	public int hashCode() {
+		String string = toString();
+
+		return string.hashCode();
+	}
+
+	public String toString() {
+		return FooSerDes.toJSON(this);
+	}
+
+}

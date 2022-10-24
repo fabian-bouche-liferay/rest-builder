@@ -1,0 +1,6 @@
+Bundle-Name: alpha-api
+Bundle-SymbolicName: com.liferay.samples.fbo.alpha.api.v2
+Bundle-Version: 2.0.0
+Export-Package:\
+	com.liferay.samples.fbo.alpha.dto.v2_0,\
+	com.liferay.samples.fbo.alpha.resource.v2_0

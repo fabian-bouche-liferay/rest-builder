@@ -1,0 +1,6 @@
+dependencies {
+	compileOnly project(":modules:alpha2:alpha-api")
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+}
+
+group = "com.liferay.samples.fbo.alpha"

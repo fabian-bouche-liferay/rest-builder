@@ -1,0 +1,9 @@
+apiDir: "../alpha-api/src/main/java"
+apiPackagePath: "com.liferay.samples.fbo.alpha"
+application:
+    baseURI: "/alpha"
+    className: "AlphaApplication"
+    name: "Alpha"
+author: "Fabian-Liferay"
+clientDir: "../alpha-client/src/main/java"
+testDir: "../alpha-test/src/testIntegration/java"

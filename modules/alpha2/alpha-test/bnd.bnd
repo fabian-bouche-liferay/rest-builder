@@ -1,0 +1,4 @@
+Bundle-Name: alpha-test
+Bundle-SymbolicName: com.liferay.samples.fbo.alpha.test
+Bundle-Version: 1.0.0
+-includeresource: com.liferay.samples.fbo.alpha.client.jar=../alpha-client/build/libs/com.liferay.samples.fbo.alpha.client-1.0.0.jar;lib:=true
